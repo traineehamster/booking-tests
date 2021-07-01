@@ -33,7 +33,7 @@ public class GeneratedTests extends TestBase {
                 open("https://www.booking.com/"));
 
         step("Page title should have text 'Booking.com | Official site | The best hotels & accommodation'", () -> {
-            String expectedTitle = "Booking.com | Official site | The best hotels & accommodation";
+            String expectedTitle = "Booking.com | Official site | The best hotels & accommodations";
             String actualTitle = title();
 
             assertThat(actualTitle).isEqualTo(expectedTitle);
