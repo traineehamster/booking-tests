@@ -1,4 +1,4 @@
-package cloud.autotests.helpers;
+package com.booking.helpers;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

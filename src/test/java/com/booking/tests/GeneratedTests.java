@@ -1,6 +1,6 @@
-package cloud.autotests.tests;
+package com.booking.tests;
 
-import cloud.autotests.helpers.DriverUtils;
+import com.booking.helpers.DriverUtils;
 import io.qameta.allure.Description;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -10,8 +10,8 @@ import static com.codeborne.selenide.Selenide.title;
 import static io.qameta.allure.Allure.step;
 import static org.assertj.core.api.Assertions.assertThat;
 
-
 public class GeneratedTests extends TestBase {
+
     @Test
     @Description("Soon to be implemented by you (or QA.GURU engineers)")
     @DisplayName("Check booking logo")
@@ -30,7 +30,7 @@ public class GeneratedTests extends TestBase {
     @DisplayName("Page title should have header text")
     void titleTest() {
         step("Open url 'https://www.booking.com/'", () ->
-            open("https://www.booking.com/"));
+                open("https://www.booking.com/"));
 
         step("Page title should have text 'Booking.com | Official site | The best hotels & accommodation'", () -> {
             String expectedTitle = "Booking.com | Official site | The best hotels & accommodation";
@@ -45,7 +45,7 @@ public class GeneratedTests extends TestBase {
     @DisplayName("Page console log should not have errors")
     void consoleShouldNotHaveErrorsTest() {
         step("Open url 'https://www.booking.com/'", () ->
-            open("https://www.booking.com/"));
+                open("https://www.booking.com/"));
 
         step("Console logs should not contain text 'SEVERE'", () -> {
             String consoleLogs = DriverUtils.getConsoleLogs();
